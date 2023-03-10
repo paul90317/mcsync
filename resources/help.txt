@@ -1,0 +1,15 @@
+
+Diplay all of your profiles
+    mcsync list-profiles
+
+Create a server with your profile
+    mcsync create-server <profile id> <server dir>
+
+Share a profile on network
+    mcsync share-profile <profile id> <port>
+
+Sync with remote profile
+    mcsync sync-remote <remote ip> <port>
+
+What do you want to do?
+mcsync

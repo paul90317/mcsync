@@ -12,11 +12,8 @@ public class CreateServer {
         if (new File(serverDir).isDirectory()){
             throw new Exception("The server directory existed.");
         }
-        LauncherProfiles launcherProfiles = new LauncherProfiles();
-        if(!(launcherProfiles.get("profiles") instanceof AbstractMap profiles && profiles.get(profileId) instanceof AbstractMap profile)){
-            throw new Exception("can't read or parse launcher_profiles.json");
-        }
-        String versionId = profile.get("lastVersionId").toString();
+        LauncherProfiles profiles = new LauncherProfiles();
+        String versionId = profiles.getValue(profileId,"lastVersionId");
         String[] vSplit = versionId.split("-");
         if(vSplit.length==3&&vSplit[1].equals("forge")){
             String version = vSplit[0]+"-"+vSplit[2];
@@ -32,7 +29,7 @@ public class CreateServer {
             p.waitFor();
             File modsDir = new File(serverDir,"mods");
             modsDir.mkdirs();
-            File gameDir = new File(profile.get("gameDir").toString(),"mods");
+            File gameDir = new File(profiles.getValue(profileId,"gameDir"),"mods");
             modsDir.mkdirs();
             Console.WriteLine("Removing mods...");
             for (File mod: modsDir.listFiles()) {

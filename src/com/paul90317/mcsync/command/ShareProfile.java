@@ -26,13 +26,13 @@ public class ShareProfile {
                 }
             });
         });
-        LauncherProfiles launcherProfiles = new LauncherProfiles();
-        if(!(launcherProfiles.get("profiles") instanceof AbstractMap<?,?> profiles && profiles.get(profileId) instanceof AbstractMap profile))
-            throw new Exception("can't read or parse launcher_profiles.json");
-        String versionId = profile.get("lastVersionId").toString();
+        LauncherProfiles profiles = new LauncherProfiles();
+        String versionId = profiles.getValue(profileId,"lastVersionId");
         ServerSocket server = new ServerSocket(port);
         HashMap<String,File> modsMap = new HashMap<>();
-        for(var mod : new File(profile.get("gameDir").toString(),"mods").listFiles()){
+        var modsDir = new File(profiles.getValue(profileId,"gameDir"),"mods");
+        modsDir.mkdirs();
+        for(var mod : modsDir.listFiles()){
             if(mod.isFile()){
                 modsMap.put(mod.getName(),mod);
             }

@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6a7f842-3720-41c1-ab23-8798ec8539e7" name="Changes" comment="" />
+    <list default="true" id="e6a7f842-3720-41c1-ab23-8798ec8539e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/CreateServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/CreateServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/ShareProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/ShareProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/SyncRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/paul90317/mcsync/command/SyncRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/paul90317/mcsync/minecraft/LauncherProfiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/paul90317/mcsync/minecraft/LauncherProfiles.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

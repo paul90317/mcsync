@@ -63,6 +63,7 @@ public class SyncRemote {
                 modStream.close();
                 Console.WriteLine("Mod downloaded: "+mod);
             }
+            Console.WriteLine("Finish");
         }else{
             throw new Exception("Unsupported version id");
         }
